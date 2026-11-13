@@ -1,0 +1,5 @@
+pymupdf4llm
+numpy
+matplotlib
+opencv-python-headless
+scikit-image

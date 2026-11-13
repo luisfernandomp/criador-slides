@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITULO}}</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+<style>
+  .reveal { font-size: 28px; }
+  .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+  .reveal h2 { font-size: 1.5em; }
+  .reveal blockquote { background: #f3f6fb; border-left: 6px solid #2a76dd; padding: .5em 1em; width: 92%; font-style: normal; }
+  .reveal pre { width: 100%; font-size: .52em; box-shadow: none; }
+  .reveal pre code { max-height: 560px; }
+  .reveal table { font-size: .72em; }
+  .reveal img { max-height: 520px; margin: .2em auto; }
+  .reveal .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2em; align-items: center; text-align: left; }
+  .reveal .cols > div > :first-child { margin-top: 0; }
+  .reveal .cols img { max-height: 470px; }
+  /* código + resultado: empilha (código em largura total, figura embaixo) para o código ficar legível */
+  .reveal .cols:has(pre) { grid-template-columns: 1fr; gap: .3em; }
+  .reveal .cols:has(pre) pre { font-size: .5em; margin: 0; }
+  .reveal .cols:has(pre) pre code { max-height: 330px; }
+  .reveal .cols:has(pre) img { max-height: 250px; display: block; }
+  .reveal ul { display: block; }
+</style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$" data-separator-notes="^Note:">
+<textarea data-template>
+{{MARKDOWN}}
+</textarea>
+</section>
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script>
+Reveal.initialize({ hash: true, slideNumber: 'c/t', width: 1280, height: 760,
+  plugins: [RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes] });
+</script>
+</body>
+</html>

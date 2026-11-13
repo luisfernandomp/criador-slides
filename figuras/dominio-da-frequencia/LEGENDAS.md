@@ -1,0 +1,14 @@
+- figuras/dominio-da-frequencia/serie-fourier-quadrada.png | Conceito 1 | Com 1, 2, 3 e 10 senos a soma (azul) se aproxima da onda quadrada (vermelha); sobra a "orelha" de Gibbs nos degraus.
+- figuras/dominio-da-frequencia/reversibilidade.png | Conceito 2 | Ir ao espectro e voltar devolve a imagem idêntica: a diferença é preta (erro ~1e-12).
+- figuras/dominio-da-frequencia/ft-1d.png | Conceito 3 | Sinal de 3 Hz + 10 Hz vira dois picos no espectro (o de 10 Hz com metade da altura); pulso retangular vira sinc.
+- figuras/dominio-da-frequencia/magnitude-vs-fase.png | Conceito 4 | Cada imagem híbrida lembra a que forneceu a fase: a fase carrega a estrutura.
+- figuras/dominio-da-frequencia/dft-manual-vs-fft.png | Conceito 5 | DFT manual e FFT dão o mesmo espectro (diferença zero), mas a FFT é muito mais rápida.
+- figuras/dominio-da-frequencia/visualizar-espectro.png | Conceito 6 | Magnitude crua e deslocada parecem pretas; só fftshift + log revela a estrutura em estrela.
+- figuras/dominio-da-frequencia/idft-reconstrucao.png | Conceito 7 | A IDFT recupera a imagem; com só 5% das maiores magnitudes ela fica borrada mas reconhecível.
+- figuras/dominio-da-frequencia/dualidade.png | Conceito 8 | Pixel branco tem espectro espalhado, cinza vira um ponto DC, e quanto maior o quadrado mais estreito o espectro.
+- figuras/dominio-da-frequencia/convolucao-vs-multiplicacao.png | Conceito 9 | Convolução espacial e multiplicação no espectro dão a mesma imagem borrada; H é um passa-baixa.
+- figuras/dominio-da-frequencia/filtros-frequencia.png | Conceito 10 | Passa-baixa borra (com ringing), passa-alta deixa só contornos; menor D0 borra mais.
+- figuras/dominio-da-frequencia/amostragem-quantizacao.png | Conceito 11 | Menos amostras por segundo perdem a onda de 5 Hz; menos níveis de cinza causam posterização.
+- figuras/dominio-da-frequencia/nyquist.png | Conceito 12 | Com fs=30 Hz a reconstrução cola no sinal; com 8 Hz (< 10 Hz) surge uma onda lenta falsa; cópias do espectro se sobrepõem.
+- figuras/dominio-da-frequencia/aliasing.png | Conceito 13 | Os pontos de 9 Hz amostrados a 10/s caem sobre uma onda falsa de 1 Hz; reduzir sem filtro gera moiré na textura.
+- figuras/dominio-da-frequencia/antialiasing.png | Conceito 14 | Reduzir sem filtro causa serrilhado e dobras no espectro; borrar antes preserva a textura fiel.
